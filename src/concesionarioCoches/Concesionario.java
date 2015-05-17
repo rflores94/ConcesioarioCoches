@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * @version 1.0
  * 
  */
-public class Concesionario {
+public class Concesionario implements Serializable {
 	
 	/**
 	 * Colección de coches. No puede tener null.

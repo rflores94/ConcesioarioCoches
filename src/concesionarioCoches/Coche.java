@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
  * @version 1.0
  *
  */
-public class Coche {
+public class Coche implements Serializable{
 	
 	/**
 	 * Matrícula del coche
@@ -106,7 +106,7 @@ public class Coche {
 	 * @return true si la matrícula es válida, false si la matrícula no es
 	 *         válida
 	 */
-	private static boolean esValida(String matricula) {
+	public static boolean esValida(String matricula) {
 		return patternMatricula.matcher(matricula).matches();
 	}
 

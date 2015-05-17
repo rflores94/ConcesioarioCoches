@@ -59,7 +59,7 @@ public enum Modelo {
 	 * Metodo toString sobreescrito
 	 */
 	public String toString() {
-		return name() + ", " + getMarca();
+		return name();
 
 	}
 
