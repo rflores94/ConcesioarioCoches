@@ -1,6 +1,14 @@
-package pgn.examenMarzo.utiles;
-
+/**
+ * Paquete que contiene herramientas que se utilizaran en el programa
+ */
+package utiles;
+/**
+ * Importación del BufferReader
+ */
 import java.io.BufferedReader;
+/**
+ * Importacion del InputStreamReader
+ */
 import java.io.InputStreamReader;
 
 /**

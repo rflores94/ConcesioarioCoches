@@ -1,40 +1,47 @@
-package pgn.examenMarzo.utiles;
+/**
+ * Paquete que contiene herramientas que se utilizaran en el programa
+ */
+package utiles;
 
 
 
 /**
  * Clase utilizada para la gestión de un menú. Se dedica a:
+ * <ol>
+ * <li>Mostrar las opciones del menú</li>
  * 
- * <li>Mostrar las opciones del menú
- * 
- * <li>Recoger y devolver las opciones de un menú
- * 
- * @author mlmc
+ * <li>Recoger y devolver las opciones de un menú</li>
+ * </ol>
+ * @author Roberto Carlos Flores Gomez
+ * @version 1.0
  * 
  */
 public class Menu {
-	String titulo = null;
-	String opciones[] = null;
-	int numOpciones = 2;
-
 	/**
-	 * 
-	 * @param titulo
-	 *            tÃ­tulo del menÃº
-	 * @param opciones
-	 *            opciones del menÃº
+	 * Titulo del menu
+	 */
+	String titulo = null;
+	/**
+	 * Opciones que tiene el menu
+	 */
+	String opciones[] = null;
+	/**
+	 * Número máximo de opciones
+	 */
+	int numOpciones = 2;
+	/**
+	 * Constructor del menu
+	 * @param titulo titulo del menu
+	 * @param opciones opciones que contiene el menu
 	 */
 	public Menu(String titulo, String[] opciones) {
 		this.titulo = titulo;
 		this.opciones = opciones;
 		this.numOpciones = this.opciones.length;
 	}
-
 	/**
-	 * Gestiona el menÃº. Consiste en mostrar las opcines y recoger la opciÃ³n
-	 * seleccionada por el usuario
-	 * 
-	 * @return opciÃ³n vÃ¡lida del menÃº
+	 * Metodo gestionar que esta compuesto del metodo mostrar y el metodo recoger opcion
+	 * @return devuelve una opcion valida
 	 */
 	public int gestionar() {
 		mostrar();
@@ -42,7 +49,7 @@ public class Menu {
 	}
 
 	/**
-	 * Muestra las opciones del menÃº
+	 * Muestra las opciones del menu
 	 */
 	private void mostrar() {
 		int i = 1;
@@ -52,9 +59,8 @@ public class Menu {
 	}
 
 	/**
-	 * Recoge la opciÃ³n vÃ¡lida del menÃº
-	 * 
-	 * @return opciÃ³n vÃ¡lida
+	 * Metodo que recoge la opcion valida
+	 * @return devuelve un número entero
 	 */
 	private int recogerOpcion() {
 		int opcion;
